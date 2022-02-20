@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Shared\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="BusinessLogic.Core\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="Api.Core\" />
+    <Folder Include="Api\" />
+  </ItemGroup>
+
+
+</Project>
