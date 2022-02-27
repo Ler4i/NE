@@ -8,16 +8,19 @@ namespace PS223020ne.Test
     public static class Start//Входная точка в приложение. static - запускает при старте программу,но запрещает делать объекты. Start() - сам объект!!!!!
     {
         public static World myWorld;//кусочек объекта
+        
         public static void StartApp()//кусочек объекта Start()
         {
-            myWorld = new World(x: 50.0F, y: 100.0F);
+            try 
+            { 
+                myWorld = new World(x: 5000000.0F, y: 500.0F);
+                
+            }
+            catch
+            {
+                Console.WriteLine("Что-от пошло не так");
+            }
         }
 
-        public static void StartDay()
-        {
-            bool isDay = false;
-            int duration = myWorld.getDurationDayAndNight();
-            checkEndDay();
-        }
     }
 }
